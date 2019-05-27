@@ -1,0 +1,1 @@
+{"reporter":["lcov","text-summary","html"],"exclude":["test/","thirdparty-wrappers/","vendor/"]}

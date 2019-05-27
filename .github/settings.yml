@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: cli
+  description: CLI for our various tools
+  homepage: 'https://github.com/dsmjs/cli#readme'
+  private: false
