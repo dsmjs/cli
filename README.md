@@ -1,5 +1,7 @@
 # cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dsmjs/cli.svg)](https://greenkeeper.io/)
+
 CLI for our various tools
 
 <!-- status badges -->
