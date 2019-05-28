@@ -4,7 +4,7 @@
   "license": "MIT",
   "version": "0.0.0-semantically-released",
   "bin": {
-    "dsmjs": "lib/dsmjs.js"
+    "dsmjs": "bin/dsmjs.js"
   },
   "files": [
     "bin/"
