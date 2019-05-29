@@ -1,4 +1,4 @@
-extends: '@form8ion'
+extends: '@dsmjs'
 
 overrides:
   - files: '**/*-test.js'
