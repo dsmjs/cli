@@ -23,7 +23,7 @@ suite('scaffold command', () => {
       .withArgs({
         languages: {JavaScript: javascript},
         vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt: githubPrompt, public: true}},
-        overrides: {copyrightHolder: 'Matt Travi'}
+        overrides: {copyrightHolder: 'dsmJS'}
       })
       .resolves(scaffoldingResults);
 

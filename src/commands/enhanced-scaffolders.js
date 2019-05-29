@@ -9,11 +9,14 @@ export function javascript(options) {
       remark: '@form8ion/remark-lint-preset',
       commitlint: {name: '@form8ion', packageName: '@form8ion/commitlint-config'}
     },
-    overrides: {npmAccount: 'form8ion'},
+    overrides: {
+      npmAccount: 'dsmjs',
+      author: {name: 'dsmJS', email: 'maintainers@dsmjs.com', url: 'https://dsmjs.com'}
+    },
     ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}}
   });
 }
 
 export function githubPrompt() {
-  return prompt({account: 'form8ion'});
+  return prompt({account: 'dsmjs'});
 }

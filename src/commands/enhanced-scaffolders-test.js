@@ -28,7 +28,10 @@ suite('enhanced scaffolders', () => {
           remark: '@form8ion/remark-lint-preset',
           commitlint: {name: '@form8ion', packageName: '@form8ion/commitlint-config'}
         },
-        overrides: {npmAccount: 'form8ion'},
+        overrides: {
+          npmAccount: 'dsmjs',
+          author: {name: 'dsmJS', email: 'maintainers@dsmjs.com', url: 'https://dsmjs.com'}
+        },
         ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}}
       })
       .resolves(output);
@@ -37,7 +40,7 @@ suite('enhanced scaffolders', () => {
   });
 
   test('that the owner account is passed to the github prompts', async () => {
-    githubScaffolder.prompt.withArgs({account: 'form8ion'}).resolves(output);
+    githubScaffolder.prompt.withArgs({account: 'dsmjs'}).resolves(output);
 
     assert.equal(await githubPrompt(), output);
   });
