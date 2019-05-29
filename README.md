@@ -5,9 +5,27 @@ CLI for our various tools
 <!-- status badges -->
 [![Build Status][ci-badge]][ci-link]
 
+## Usage
+
 <!-- consumer badges -->
 [![npm][npm-badge]][npm-link]
 [![MIT license][license-badge]][license-link]
+
+### Installation
+
+```sh
+$ npm install --global @dsmjs/cli
+```
+
+### Commands
+
+#### `scaffold`
+
+Scaffolds a new project using [`@travi/project-scaffolder`](https://www.npmjs.com/package/@travi/project-scaffolder)
+
+```sh
+$ dsmjs scaffold
+```
 
 ## Contributing
 
