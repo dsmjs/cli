@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@babel/register": "7.4.4",
-    "@form8ion/eslint-config": "1.0.1",
+    "@dsmjs/eslint-config": "1.0.0-beta.1",
     "@form8ion/eslint-config-mocha": "1.1.0",
     "@travi/any": "2.0.0",
     "@travi/babel-preset": "3.0.0",
