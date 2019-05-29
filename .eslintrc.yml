@@ -2,4 +2,4 @@ extends: '@dsmjs'
 
 overrides:
   - files: '**/*-test.js'
-    extends: '@form8ion/mocha'
+    extends: '@dsmjs/mocha'
