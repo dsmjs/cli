@@ -4,6 +4,3 @@ repository:
   description: CLI for our various tools
   homepage: 'https://github.com/dsmjs/cli#readme'
   private: false
-teams:
-    - name: maintainers
-      permission: push
