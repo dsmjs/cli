@@ -1,5 +1,3 @@
-extends: '@dsmjs'
-
-overrides:
-  - files: '**/*-test.js'
-    extends: '@dsmjs/mocha'
+extends:
+  - '@dsmjs'
+  - '@dsmjs/mocha'
