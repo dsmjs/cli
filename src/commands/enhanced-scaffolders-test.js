@@ -27,6 +27,7 @@ suite('enhanced scaffolders', () => {
         configs: {
           eslint: {prefix: '@dsmjs', packageName: '@dsmjs/eslint-config'},
           remark: '@form8ion/remark-lint-preset',
+          babelPreset: {name: '@dsmjs', packageName: '@dsmjs/babel-preset'},
           commitlint: {name: '@form8ion', packageName: '@form8ion/commitlint-config'}
         },
         overrides: {
