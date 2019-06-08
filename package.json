@@ -36,7 +36,7 @@
     "prepack": "run-s build"
   },
   "dependencies": {
-    "@travi/github-scaffolder": "4.0.1",
+    "@travi/github-scaffolder": "4.1.0",
     "@travi/javascript-scaffolder": "7.0.0",
     "@travi/project-scaffolder": "6.4.4",
     "@travi/travis-scaffolder-javascript": "1.12.0",
