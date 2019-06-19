@@ -7,7 +7,7 @@ export function javascript(options) {
     ...options,
     configs: {
       eslint: {scope: '@dsmjs'},
-      remark: '@form8ion/remark-lint-preset',
+      remark: '@dsmjs/remark-preset-lint',
       babelPreset: {name: '@dsmjs', packageName: '@dsmjs/babel-preset'},
       commitlint: {name: '@form8ion', packageName: '@form8ion/commitlint-config'}
     },
