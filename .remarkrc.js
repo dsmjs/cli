@@ -1,1 +1,1 @@
-exports.plugins = ['remark-preset-lint-travi'];
+exports.plugins = ['@dsmjs/remark-preset-lint'];
