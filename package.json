@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@babel/register": "7.7.4",
-    "@dsmjs/babel-preset": "1.0.21",
+    "@dsmjs/babel-preset": "1.0.22",
     "@dsmjs/eslint-config": "1.0.27",
     "@dsmjs/eslint-config-mocha": "1.0.7",
     "@dsmjs/remark-preset-lint": "1.0.2",
