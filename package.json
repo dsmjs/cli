@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@travi/github-scaffolder": "4.2.1",
-    "@travi/javascript-scaffolder": "10.1.0",
+    "@travi/javascript-scaffolder": "10.2.0",
     "@travi/project-scaffolder": "8.3.1",
     "@travi/travis-scaffolder-javascript": "3.0.3",
     "travis-token-updater": "1.6.10",
