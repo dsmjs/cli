@@ -1,5 +1,6 @@
 import * as projectScaffolder from '@travi/project-scaffolder';
 import {scaffold as scaffoldGithub} from '@travi/github-scaffolder';
+import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
@@ -23,7 +24,8 @@ suite('scaffold command', () => {
       .withArgs({
         languages: {JavaScript: javascript},
         vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt: githubPrompt, public: true}},
-        overrides: {copyrightHolder: 'dsmJS'}
+        overrides: {copyrightHolder: 'dsmJS'},
+        dependencyUpdaters: {Dependabot: {scaffolder: scaffoldDependabot}}
       })
       .resolves(scaffoldingResults);
 

@@ -36,6 +36,7 @@
     "prepack": "run-s build"
   },
   "dependencies": {
+    "@form8ion/dependabot-scaffolder": "1.2.0",
     "@travi/github-scaffolder": "5.0.2",
     "@travi/javascript-scaffolder": "10.18.3",
     "@travi/project-scaffolder": "8.7.0",
