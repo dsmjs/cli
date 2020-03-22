@@ -27,6 +27,14 @@ Scaffolds a new project using [`@travi/project-scaffolder`](https://www.npmjs.co
 $ dsmjs scaffold
 ```
 
+#### `travis-tokens`
+
+Roll the `NPM_TOKEN` or `GH_TOKEN` across multiple repositories
+
+```sh
+$ dsmjs travis-tokens
+```
+
 ## Contributing
 
 <!-- contribution badges -->
