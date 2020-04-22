@@ -38,7 +38,7 @@
   "dependencies": {
     "@form8ion/dependabot-scaffolder": "1.2.0",
     "@travi/github-scaffolder": "5.1.0",
-    "@travi/javascript-scaffolder": "10.22.0",
+    "@travi/javascript-scaffolder": "10.22.1",
     "@travi/project-scaffolder": "8.10.0",
     "@travi/travis-scaffolder-javascript": "3.2.0",
     "travis-token-updater": "1.6.12",
