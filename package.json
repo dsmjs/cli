@@ -37,6 +37,8 @@
   },
   "dependencies": {
     "@form8ion/dependabot-scaffolder": "1.2.0",
+    "@form8ion/lift": "1.7.0",
+    "@form8ion/remove-greenkeeper": "1.1.4",
     "@travi/github-scaffolder": "5.1.1",
     "@travi/javascript-scaffolder": "10.22.1",
     "@travi/project-scaffolder": "8.10.1",
