@@ -1,5 +1,6 @@
 import * as lifter from '@form8ion/lift';
 import {removeGreenkeeper} from '@form8ion/remove-greenkeeper';
+import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
@@ -21,6 +22,7 @@ suite('lift command', () => {
     lifter.lift
       .withArgs({
         scaffolders: {
+          Dependabot: scaffoldDependabot,
           'Remove Greenkeeper': removeGreenkeeper
         }
       })
