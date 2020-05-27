@@ -48,7 +48,7 @@
     "yargs": "15.3.1"
   },
   "devDependencies": {
-    "@babel/register": "7.9.0",
+    "@babel/register": "7.10.1",
     "@dsmjs/babel-preset": "1.0.33",
     "@dsmjs/eslint-config": "1.0.34",
     "@dsmjs/eslint-config-mocha": "1.0.9",
