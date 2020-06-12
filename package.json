@@ -39,7 +39,7 @@
     "@form8ion/dependabot-scaffolder": "1.2.0",
     "@form8ion/lift": "1.9.2",
     "@form8ion/remove-greenkeeper": "1.1.4",
-    "@travi/github-scaffolder": "5.1.1",
+    "@travi/github-scaffolder": "5.1.2",
     "@travi/javascript-scaffolder": "10.22.6",
     "@travi/project-scaffolder": "8.10.3",
     "@travi/travis-scaffolder-javascript": "3.2.1",
