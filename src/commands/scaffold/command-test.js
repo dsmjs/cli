@@ -1,4 +1,5 @@
 import * as projectScaffolder from '@travi/project-scaffolder';
+import {questionNames as jsQuestionNames} from '@travi/javascript-scaffolder';
 import {scaffold as scaffoldGithub} from '@travi/github-scaffolder';
 import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
 import {assert} from 'chai';
@@ -26,7 +27,7 @@ suite('scaffold command', () => {
     const decisionsWithEnhancements = {
       ...decisions,
       [projectScaffolder.questionNames.REPO_HOST]: 'GitHub',
-      unitTestFramework: 'mocha'
+      [jsQuestionNames.UNIT_TEST_FRAMEWORK]: 'mocha'
     };
     enhancedScaffolders.javascriptScaffolderFactory.withArgs(decisionsWithEnhancements).returns(javascript);
     projectScaffolder.scaffold
