@@ -1,3 +1,4 @@
 extends:
   - '@dsmjs'
   - '@dsmjs/mocha'
+  - '@dsmjs/cucumber'

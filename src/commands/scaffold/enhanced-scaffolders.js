@@ -1,9 +1,10 @@
+import {questionNames as projectQuestionNames} from '@travi/project-scaffolder';
 import {scaffold as scaffoldJavaScript} from '@travi/javascript-scaffolder';
 import {scaffold as scaffoldTravisForJavaScript} from '@travi/travis-scaffolder-javascript';
 import {prompt} from '@travi/github-scaffolder';
 
-export function javascript(options) {
-  return scaffoldJavaScript({
+export function javascriptScaffolderFactory(decisions) {
+  return options => scaffoldJavaScript({
     ...options,
     configs: {
       eslint: {scope: '@dsmjs'},
@@ -15,10 +16,11 @@ export function javascript(options) {
       npmAccount: 'dsmjs',
       author: {name: 'dsmJS', email: 'maintainers@dsmjs.com', url: 'https://dsmjs.com'}
     },
-    ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}}
+    ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}},
+    decisions
   });
 }
 
 export function githubPrompt() {
-  return prompt({account: 'dsmjs'});
+  return prompt({account: 'dsmjs', decisions: {[projectQuestionNames.REPO_OWNER]: 'dsmjs'}});
 }
