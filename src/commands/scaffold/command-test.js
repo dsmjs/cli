@@ -16,6 +16,7 @@ suite('scaffold command', () => {
 
     sandbox.stub(projectScaffolder, 'scaffold');
     sandbox.stub(enhancedScaffolders, 'javascriptScaffolderFactory');
+    sandbox.stub(enhancedScaffolders, 'githubPromptFactory');
   });
 
   teardown(() => sandbox.restore());
@@ -24,16 +25,19 @@ suite('scaffold command', () => {
     const scaffoldingResults = any.simpleObject();
     const decisions = any.simpleObject();
     const javascript = () => undefined;
+    const githubPrompt = () => undefined;
     const decisionsWithEnhancements = {
       ...decisions,
       [projectScaffolder.questionNames.REPO_HOST]: 'GitHub',
+      [projectScaffolder.questionNames.REPO_OWNER]: 'dsmjs',
       [jsQuestionNames.UNIT_TEST_FRAMEWORK]: 'mocha'
     };
     enhancedScaffolders.javascriptScaffolderFactory.withArgs(decisionsWithEnhancements).returns(javascript);
+    enhancedScaffolders.githubPromptFactory.withArgs(decisionsWithEnhancements).returns(githubPrompt);
     projectScaffolder.scaffold
       .withArgs({
         languages: {JavaScript: javascript},
-        vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt: enhancedScaffolders.githubPrompt, public: true}},
+        vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt: githubPrompt, public: true}},
         overrides: {copyrightHolder: 'dsmJS'},
         dependencyUpdaters: {Dependabot: {scaffolder: scaffoldDependabot}},
         decisions: decisionsWithEnhancements

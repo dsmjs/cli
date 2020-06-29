@@ -1,4 +1,3 @@
-import {questionNames as projectQuestionNames} from '@travi/project-scaffolder';
 import {scaffold as scaffoldJavaScript} from '@travi/javascript-scaffolder';
 import {scaffold as scaffoldTravisForJavaScript} from '@travi/travis-scaffolder-javascript';
 import {prompt} from '@travi/github-scaffolder';
@@ -23,6 +22,6 @@ export function javascriptScaffolderFactory(decisions) {
   });
 }
 
-export function githubPrompt() {
-  return prompt({account: 'dsmjs', decisions: {[projectQuestionNames.REPO_OWNER]: 'dsmjs'}});
+export function githubPromptFactory(decisions) {
+  return () => prompt({account: 'dsmjs', decisions});
 }

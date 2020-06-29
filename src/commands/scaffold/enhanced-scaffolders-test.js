@@ -1,4 +1,3 @@
-import {questionNames as projectQuestionNames} from '@travi/project-scaffolder';
 import * as javascriptScaffolder from '@travi/javascript-scaffolder';
 import * as githubScaffolder from '@travi/github-scaffolder';
 import {scaffold as scaffoldTravisForJavaScript} from '@travi/travis-scaffolder-javascript';
@@ -6,7 +5,7 @@ import {scaffold as scaffoldMocha} from '@form8ion/mocha-scaffolder';
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
-import {javascriptScaffolderFactory, githubPrompt} from './enhanced-scaffolders';
+import {githubPromptFactory, javascriptScaffolderFactory} from './enhanced-scaffolders';
 
 suite('enhanced scaffolders', () => {
   let sandbox;
@@ -47,10 +46,9 @@ suite('enhanced scaffolders', () => {
   });
 
   test('that the owner account is passed to the github prompts', async () => {
-    githubScaffolder.prompt
-      .withArgs({account: 'dsmjs', decisions: {[projectQuestionNames.REPO_OWNER]: 'dsmjs'}})
-      .resolves(output);
+    const decisions = any.simpleObject();
+    githubScaffolder.prompt.withArgs({account: 'dsmjs', decisions}).resolves(output);
 
-    assert.equal(await githubPrompt(), output);
+    assert.equal(await githubPromptFactory(decisions)(), output);
   });
 });
