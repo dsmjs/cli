@@ -2,6 +2,7 @@ import {questionNames as projectQuestionNames} from '@travi/project-scaffolder';
 import * as javascriptScaffolder from '@travi/javascript-scaffolder';
 import * as githubScaffolder from '@travi/github-scaffolder';
 import {scaffold as scaffoldTravisForJavaScript} from '@travi/travis-scaffolder-javascript';
+import {scaffold as scaffoldMocha} from '@form8ion/mocha-scaffolder';
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
@@ -37,6 +38,7 @@ suite('enhanced scaffolders', () => {
           author: {name: 'dsmJS', email: 'maintainers@dsmjs.com', url: 'https://dsmjs.com'}
         },
         ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}},
+        unitTestFrameworks: {mocha: {scaffolder: scaffoldMocha}},
         decisions
       })
       .resolves(output);

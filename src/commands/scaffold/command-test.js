@@ -23,14 +23,19 @@ suite('scaffold command', () => {
     const scaffoldingResults = any.simpleObject();
     const decisions = any.simpleObject();
     const javascript = () => undefined;
-    enhancedScaffolders.javascriptScaffolderFactory.withArgs(decisions).returns(javascript);
+    const decisionsWithEnhancements = {
+      ...decisions,
+      [projectScaffolder.questionNames.REPO_HOST]: 'GitHub',
+      unitTestFramework: 'mocha'
+    };
+    enhancedScaffolders.javascriptScaffolderFactory.withArgs(decisionsWithEnhancements).returns(javascript);
     projectScaffolder.scaffold
       .withArgs({
         languages: {JavaScript: javascript},
         vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt: enhancedScaffolders.githubPrompt, public: true}},
         overrides: {copyrightHolder: 'dsmJS'},
         dependencyUpdaters: {Dependabot: {scaffolder: scaffoldDependabot}},
-        decisions: {...decisions, [projectScaffolder.questionNames.REPO_HOST]: 'GitHub'}
+        decisions: decisionsWithEnhancements
       })
       .resolves(scaffoldingResults);
 

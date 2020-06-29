@@ -4,12 +4,18 @@ import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
 import {githubPrompt, javascriptScaffolderFactory} from './enhanced-scaffolders';
 
 export function handler(decisions) {
+  const decisionsWithEnhancements = {
+    ...decisions,
+    [projectQuestionNames.REPO_HOST]: 'GitHub',
+    unitTestFramework: 'mocha'
+  };
+
   return scaffold({
-    languages: {JavaScript: javascriptScaffolderFactory(decisions)},
+    languages: {JavaScript: javascriptScaffolderFactory(decisionsWithEnhancements)},
     vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt: githubPrompt, public: true}},
     overrides: {copyrightHolder: 'dsmJS'},
     dependencyUpdaters: {Dependabot: {scaffolder: scaffoldDependabot}},
-    decisions: {...decisions, [projectQuestionNames.REPO_HOST]: 'GitHub'}
+    decisions: decisionsWithEnhancements
   });
 }
 
