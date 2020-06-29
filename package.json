@@ -58,7 +58,7 @@
     "@babel/register": "7.10.3",
     "@dsmjs/babel-preset": "1.0.36",
     "@dsmjs/eslint-config": "1.0.40",
-    "@dsmjs/eslint-config-cucumber": "1.0.0-alpha.1",
+    "@dsmjs/eslint-config-cucumber": "1.0.0",
     "@dsmjs/eslint-config-mocha": "1.0.9",
     "@dsmjs/remark-preset-lint": "1.0.8",
     "@travi/any": "2.0.9",
