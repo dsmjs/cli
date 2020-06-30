@@ -55,7 +55,7 @@
     "yargs": "15.3.1"
   },
   "devDependencies": {
-    "@babel/register": "7.10.3",
+    "@babel/register": "7.10.4",
     "@dsmjs/babel-preset": "1.0.36",
     "@dsmjs/eslint-config": "1.0.40",
     "@dsmjs/eslint-config-cucumber": "1.0.0",
