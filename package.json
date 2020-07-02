@@ -52,7 +52,7 @@
     "@travi/travis-scaffolder-javascript": "3.2.2",
     "travis-token-updater": "1.6.12",
     "update-notifier": "4.1.0",
-    "yargs": "15.3.1"
+    "yargs": "15.4.0"
   },
   "devDependencies": {
     "@babel/register": "7.10.4",
