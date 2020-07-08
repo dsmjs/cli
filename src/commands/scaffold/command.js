@@ -5,10 +5,17 @@ import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
 import {githubPromptFactory, javascriptScaffolderFactory} from './enhanced-scaffolders';
 
 export function handler(decisions) {
+  const orgName = 'dsmjs';
+  const userGroupName = 'dsmJS';
   const decisionsWithEnhancements = {
     ...decisions,
+    [projectQuestionNames.COPYRIGHT_HOLDER]: userGroupName,
     [projectQuestionNames.REPO_HOST]: 'GitHub',
-    [projectQuestionNames.REPO_OWNER]: 'dsmjs',
+    [projectQuestionNames.REPO_OWNER]: orgName,
+    [jsQuestionNames.AUTHOR_NAME]: userGroupName,
+    [jsQuestionNames.AUTHOR_EMAIL]: 'maintainers@dsmjs.com',
+    [jsQuestionNames.AUTHOR_URL]: 'https://dsmjs.com',
+    [jsQuestionNames.SCOPE]: orgName,
     [jsQuestionNames.UNIT_TEST_FRAMEWORK]: 'mocha'
   };
 
@@ -17,7 +24,7 @@ export function handler(decisions) {
     vcsHosts: {
       GitHub: {scaffolder: scaffoldGithub, prompt: githubPromptFactory(decisionsWithEnhancements), public: true}
     },
-    overrides: {copyrightHolder: 'dsmJS'},
+    overrides: {copyrightHolder: userGroupName},
     dependencyUpdaters: {Dependabot: {scaffolder: scaffoldDependabot}},
     decisions: decisionsWithEnhancements
   });

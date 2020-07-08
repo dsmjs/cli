@@ -28,8 +28,13 @@ suite('scaffold command', () => {
     const githubPrompt = () => undefined;
     const decisionsWithEnhancements = {
       ...decisions,
+      [projectScaffolder.questionNames.COPYRIGHT_HOLDER]: 'dsmJS',
       [projectScaffolder.questionNames.REPO_HOST]: 'GitHub',
       [projectScaffolder.questionNames.REPO_OWNER]: 'dsmjs',
+      [jsQuestionNames.AUTHOR_NAME]: 'dsmJS',
+      [jsQuestionNames.AUTHOR_EMAIL]: 'maintainers@dsmjs.com',
+      [jsQuestionNames.AUTHOR_URL]: 'https://dsmjs.com',
+      [jsQuestionNames.SCOPE]: '@dsmjs',
       [jsQuestionNames.UNIT_TEST_FRAMEWORK]: 'mocha'
     };
     enhancedScaffolders.javascriptScaffolderFactory.withArgs(decisionsWithEnhancements).returns(javascript);
