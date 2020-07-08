@@ -1,5 +1,6 @@
 import {scaffold as scaffoldJavaScript} from '@travi/javascript-scaffolder';
 import {scaffold as scaffoldTravisForJavaScript} from '@travi/travis-scaffolder-javascript';
+import {scaffold as scaffoldGithubActions} from '@form8ion/github-actions-node-ci';
 import {prompt} from '@travi/github-scaffolder';
 import {scaffold as scaffoldMocha} from '@form8ion/mocha-scaffolder';
 
@@ -16,7 +17,10 @@ export function javascriptScaffolderFactory(decisions) {
       npmAccount: 'dsmjs',
       author: {name: 'dsmJS', email: 'maintainers@dsmjs.com', url: 'https://dsmjs.com'}
     },
-    ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}},
+    ciServices: {
+      Travis: {scaffolder: scaffoldTravisForJavaScript, public: true},
+      'GitHub Actions': {scaffolder: scaffoldGithubActions, public: true}
+    },
     unitTestFrameworks: {mocha: {scaffolder: scaffoldMocha}},
     decisions
   });

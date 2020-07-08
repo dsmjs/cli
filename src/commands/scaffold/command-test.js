@@ -34,7 +34,7 @@ suite('scaffold command', () => {
       [jsQuestionNames.AUTHOR_NAME]: 'dsmJS',
       [jsQuestionNames.AUTHOR_EMAIL]: 'maintainers@dsmjs.com',
       [jsQuestionNames.AUTHOR_URL]: 'https://dsmjs.com',
-      [jsQuestionNames.SCOPE]: '@dsmjs',
+      [jsQuestionNames.SCOPE]: 'dsmjs',
       [jsQuestionNames.UNIT_TEST_FRAMEWORK]: 'mocha'
     };
     enhancedScaffolders.javascriptScaffolderFactory.withArgs(decisionsWithEnhancements).returns(javascript);
