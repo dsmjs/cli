@@ -44,7 +44,7 @@
   "dependencies": {
     "@form8ion/dependabot-scaffolder": "1.2.0",
     "@form8ion/github-actions-node-ci": "1.5.0",
-    "@form8ion/lift": "1.9.2",
+    "@form8ion/lift": "1.10.0",
     "@form8ion/mocha-scaffolder": "1.0.0",
     "@form8ion/remove-greenkeeper": "1.1.4",
     "@travi/github-scaffolder": "5.1.3",
