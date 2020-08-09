@@ -48,7 +48,7 @@
     "@form8ion/mocha-scaffolder": "1.0.0",
     "@form8ion/remove-greenkeeper": "1.1.4",
     "@travi/github-scaffolder": "5.2.0",
-    "@travi/javascript-scaffolder": "11.1.4",
+    "@travi/javascript-scaffolder": "11.1.5",
     "@travi/project-scaffolder": "8.10.4",
     "@travi/travis-scaffolder-javascript": "3.2.2",
     "travis-token-updater": "1.6.12",
