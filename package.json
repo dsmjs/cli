@@ -49,7 +49,7 @@
     "@form8ion/remove-greenkeeper": "1.1.6",
     "@travi/github-scaffolder": "5.2.0",
     "@travi/javascript-scaffolder": "11.12.0",
-    "@travi/project-scaffolder": "8.10.7",
+    "@travi/project-scaffolder": "8.10.8",
     "@travi/travis-scaffolder-javascript": "4.0.0",
     "travis-token-updater": "1.6.12",
     "update-notifier": "4.1.1",
