@@ -52,7 +52,7 @@
     "@travi/project-scaffolder": "8.10.10",
     "@travi/travis-scaffolder-javascript": "4.0.0",
     "travis-token-updater": "1.6.12",
-    "update-notifier": "5.0.0",
+    "update-notifier": "5.0.1",
     "yargs": "16.1.0"
   },
   "devDependencies": {
