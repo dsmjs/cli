@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@form8ion/dependabot-scaffolder": "1.2.0",
-    "@form8ion/github-actions-node-ci": "1.10.0",
+    "@form8ion/github-actions-node-ci": "1.10.1",
     "@form8ion/lift": "1.10.3",
     "@form8ion/mocha-scaffolder": "1.0.0",
     "@form8ion/remove-greenkeeper": "1.1.7",
