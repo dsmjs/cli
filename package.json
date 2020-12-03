@@ -47,7 +47,7 @@
     "@form8ion/lift": "1.10.3",
     "@form8ion/mocha-scaffolder": "1.0.0",
     "@form8ion/remove-greenkeeper": "1.1.7",
-    "@form8ion/replace-travis-ci-with-github-actions": "1.2.4",
+    "@form8ion/replace-travis-ci-with-github-actions": "1.2.5",
     "@travi/github-scaffolder": "5.3.0",
     "@travi/javascript-scaffolder": "11.13.5",
     "@travi/project-scaffolder": "8.10.11",
