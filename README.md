@@ -4,7 +4,7 @@ CLI for our various tools
 
 <!--status-badges start -->
 
-[![Build Status][ci-badge]][ci-link]
+[![Node CI Workflow Status][github-actions-ci-badge]][github-actions-ci-link]
 
 <!--status-badges end -->
 
@@ -74,10 +74,6 @@ $ npm test
 
 [license-badge]: https://img.shields.io/github/license/dsmjs/cli.svg
 
-[ci-link]: https://travis-ci.com/dsmjs/cli
-
-[ci-badge]: https://img.shields.io/travis/com/dsmjs/cli/master.svg
-
 [commit-convention-link]: https://conventionalcommits.org
 
 [commit-convention-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
@@ -97,3 +93,7 @@ $ npm test
 [dependabot-link]: https://dependabot.com/
 
 [dependabot-badge]: https://badgen.net/dependabot/dsmjs/cli/?icon=dependabot
+
+[github-actions-ci-link]: https://github.com/dsmjs/cli/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
+
+[github-actions-ci-badge]: https://github.com/dsmjs/cli/workflows/Node.js%20CI/badge.svg

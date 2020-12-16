@@ -27,7 +27,7 @@
     "lint:js": "eslint . --cache",
     "lint:md": "remark . --frail",
     "lint:sensitive": "ban",
-    "lint:travis": "travis-lint .travis.yml",
+    "lint:peer": "npm ls >/dev/null",
     "clean": "rimraf ./bin",
     "prebuild": "run-s clean",
     "build": "npm-run-all --print-label --parallel build:*",
@@ -88,7 +88,6 @@
     "rollup-plugin-json": "4.0.0",
     "rollup-plugin-node-resolve": "5.2.0",
     "sinon": "9.2.2",
-    "testdouble": "3.16.1",
-    "travis-lint": "1.0.0"
+    "testdouble": "3.16.1"
   }
 }
