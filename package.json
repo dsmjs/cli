@@ -50,7 +50,7 @@
     "@form8ion/replace-travis-ci-with-github-actions": "1.2.5",
     "@travi/github-scaffolder": "5.3.1",
     "@travi/javascript-scaffolder": "11.18.4",
-    "@travi/project-scaffolder": "8.10.12",
+    "@travi/project-scaffolder": "8.11.1",
     "@travi/travis-scaffolder-javascript": "4.0.0",
     "travis-token-updater": "1.6.12",
     "update-notifier": "5.0.1",
