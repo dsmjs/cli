@@ -1,7 +1,13 @@
 import {lift} from '@form8ion/lift';
 import {removeGreenkeeper} from '@form8ion/remove-greenkeeper';
-import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
+import {
+  lift as liftDependabot,
+  predicate as dependabotPredicate,
+  scaffold as scaffoldDependabot
+} from '@form8ion/dependabot-scaffolder';
+import {test as jsApplicabilityTest, lift as liftJavascript} from '@form8ion/lift-javascript';
 import {replace as replaceTravisCiWithGithubActions} from '@form8ion/replace-travis-ci-with-github-actions';
+import {lift as liftGithubActionsCI, test as githubActionsCiApplicabilityTest} from '@form8ion/github-actions-node-ci';
 
 export function handler() {
   return lift({
@@ -9,6 +15,11 @@ export function handler() {
       Dependabot: scaffoldDependabot,
       'Remove Greenkeeper': removeGreenkeeper,
       'Replace Travis CI with GitHub Actions': replaceTravisCiWithGithubActions
+    },
+    enhancers: {
+      JavaScript: {test: jsApplicabilityTest, lift: liftJavascript},
+      Dependabot: {test: dependabotPredicate, lift: liftDependabot},
+      'GitHub Actions CI': {test: githubActionsCiApplicabilityTest, lift: liftGithubActionsCI}
     }
   });
 }

@@ -1,7 +1,13 @@
 import * as lifter from '@form8ion/lift';
 import {removeGreenkeeper} from '@form8ion/remove-greenkeeper';
-import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
+import {
+  lift as liftDependabot,
+  predicate as dependabotPredicate,
+  scaffold as scaffoldDependabot
+} from '@form8ion/dependabot-scaffolder';
 import {replace as replaceTravisCiWithGithubActions} from '@form8ion/replace-travis-ci-with-github-actions';
+import {test as jsApplicabilityTest, lift as liftJavascript} from '@form8ion/lift-javascript';
+import {lift as liftGithubActionsCI, test as githubActionsCiApplicabilityTest} from '@form8ion/github-actions-node-ci';
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
@@ -26,6 +32,11 @@ suite('lift command', () => {
           Dependabot: scaffoldDependabot,
           'Remove Greenkeeper': removeGreenkeeper,
           'Replace Travis CI with GitHub Actions': replaceTravisCiWithGithubActions
+        },
+        enhancers: {
+          JavaScript: {test: jsApplicabilityTest, lift: liftJavascript},
+          Dependabot: {test: dependabotPredicate, lift: liftDependabot},
+          'GitHub Actions CI': {test: githubActionsCiApplicabilityTest, lift: liftGithubActionsCI}
         }
       })
       .resolves(liftingResults);
