@@ -45,7 +45,7 @@
     "@form8ion/dependabot-scaffolder": "1.4.0",
     "@form8ion/github-actions-node-ci": "1.13.4",
     "@form8ion/lift": "1.12.1",
-    "@form8ion/lift-javascript": "1.8.2",
+    "@form8ion/lift-javascript": "1.8.4",
     "@form8ion/mocha-scaffolder": "1.0.0",
     "@form8ion/remove-greenkeeper": "1.1.7",
     "@form8ion/replace-travis-ci-with-github-actions": "1.2.5",
