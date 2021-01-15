@@ -1,4 +1,5 @@
 import * as projectScaffolder from '@travi/project-scaffolder';
+import {packageManagers} from '@form8ion/javascript-core';
 import {questionNames as jsQuestionNames} from '@travi/javascript-scaffolder';
 import {scaffold as scaffoldGithub} from '@travi/github-scaffolder';
 import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
@@ -35,7 +36,8 @@ suite('scaffold command', () => {
       [jsQuestionNames.AUTHOR_EMAIL]: 'maintainers@dsmjs.com',
       [jsQuestionNames.AUTHOR_URL]: 'https://dsmjs.com',
       [jsQuestionNames.SCOPE]: 'dsmjs',
-      [jsQuestionNames.UNIT_TEST_FRAMEWORK]: 'mocha'
+      [jsQuestionNames.UNIT_TEST_FRAMEWORK]: 'mocha',
+      [jsQuestionNames.PACKAGE_MANAGER]: packageManagers.NPM
     };
     enhancedScaffolders.javascriptScaffolderFactory.withArgs(decisionsWithEnhancements).returns(javascript);
     enhancedScaffolders.githubPromptFactory.withArgs(decisionsWithEnhancements).returns(githubPrompt);
