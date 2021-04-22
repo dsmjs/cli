@@ -53,7 +53,7 @@
     "@travi/github-scaffolder": "5.3.3",
     "@travi/javascript-scaffolder": "12.2.9",
     "@travi/project-scaffolder": "9.0.8",
-    "@travi/travis-scaffolder-javascript": "4.0.1",
+    "@travi/travis-scaffolder-javascript": "4.0.2",
     "travis-token-updater": "1.6.12",
     "update-notifier": "5.1.0",
     "yargs": "16.2.0"
