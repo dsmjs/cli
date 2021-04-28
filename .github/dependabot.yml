@@ -1,0 +1,33 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@travi/javascript-scaffolder"
+    versions:
+    - 12.2.6
+    - 12.2.7
+    - 12.2.8
+  - dependency-name: "@form8ion/lift-javascript"
+    versions:
+    - 1.11.2
+    - 1.9.1
+    - 1.9.2
+  - dependency-name: "@dsmjs/babel-preset"
+    versions:
+    - 1.0.62
+    - 1.0.63
+    - 1.0.64
+    - 1.0.65
+    - 1.0.66
+  - dependency-name: "@travi/project-scaffolder"
+    versions:
+    - 9.0.8
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
