@@ -39,7 +39,8 @@
     "test:integration:base": "DEBUG=any cucumber-js test/integration --profile base",
     "test:integration:debug": "DEBUG=nock.* run-s test:integration",
     "test:integration:wip": "run-s 'test:integration:base -- --profile wip'",
-    "test:integration:focus": "run-s 'test:integration:base -- --profile focus'"
+    "test:integration:focus": "run-s 'test:integration:base -- --profile focus'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@form8ion/dependabot-scaffolder": "1.4.0",
