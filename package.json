@@ -52,7 +52,7 @@
     "@form8ion/remove-greenkeeper": "1.1.8",
     "@form8ion/replace-travis-ci-with-github-actions": "1.2.6",
     "@travi/github-scaffolder": "5.3.3",
-    "@travi/javascript-scaffolder": "13.0.1",
+    "@travi/javascript-scaffolder": "13.0.2",
     "@travi/project-scaffolder": "10.0.0",
     "travis-token-updater": "1.6.12",
     "update-notifier": "5.1.0",
