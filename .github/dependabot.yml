@@ -24,7 +24,7 @@ updates:
     - 1.0.64
     - 1.0.65
     - 1.0.66
-  - dependency-name: "@travi/project-scaffolder"
+  - dependency-name: "@form8ion/project"
     versions:
     - 9.0.8
   commit-message:

@@ -27,7 +27,7 @@ $ npm install --global @dsmjs/cli
 
 #### `scaffold`
 
-Scaffolds a new project using [`@travi/project-scaffolder`](https://www.npmjs.com/package/@travi/project-scaffolder)
+Scaffolds a new project using [`@form8ion/project`](https://www.npmjs.com/package/@form8ion/project)
 
 ```sh
 $ dsmjs scaffold
