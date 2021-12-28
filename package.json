@@ -54,7 +54,7 @@
     "@form8ion/replace-travis-ci-with-github-actions": "2.0.0",
     "@travi/github-scaffolder": "7.0.0",
     "@travi/javascript-scaffolder": "14.9.4",
-    "travis-token-updater": "1.6.12",
+    "travis-token-updater": "1.6.14",
     "update-notifier": "5.1.0",
     "yargs": "17.2.1"
   },
@@ -69,7 +69,7 @@
     "ban-sensitive-files": "1.9.16",
     "chai": "4.3.4",
     "codecov": "3.8.3",
-    "commitlint-config-dsmjs": "1.0.31",
+    "commitlint-config-dsmjs": "1.0.34",
     "cucumber": "6.0.5",
     "cz-conventional-changelog": "3.3.0",
     "debug": "4.3.2",
