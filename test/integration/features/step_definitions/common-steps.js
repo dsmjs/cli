@@ -30,7 +30,7 @@ Before(async function () {
 
   this.execa = td.replace('execa');
   ({questionNames: projectQuestionNames} = require('@form8ion/project'));
-  ({questionNames: javascriptQuestionNames} = require('@travi/javascript-scaffolder'));
+  ({questionNames: javascriptQuestionNames} = require('@form8ion/javascript'));
   ({dialects} = require('@form8ion/javascript-core'));
   action = require('../../../../src/commands/scaffold/command').handler;
 
@@ -38,20 +38,6 @@ Before(async function () {
     [`${process.env.HOME}/.netrc`]: `machine github.com\n  login ${githubToken}`,
     [`${process.env.HOME}/.gitconfig`]: `[github]\n\tuser = ${this.githubUser}`,
     node_modules: {
-      '@travi': {
-        'javascript-scaffolder': {
-          templates: {
-            'rollup.config.js': await promises.readFile(resolve(
-              ...pathToNodeModules,
-              '@travi/javascript-scaffolder/templates/rollup.config.js'
-            )),
-            'example.mustache': await promises.readFile(resolve(
-              ...pathToNodeModules,
-              '@travi/javascript-scaffolder/templates/example.mustache'
-            ))
-          }
-        }
-      },
       '@form8ion': {
         project: {
           templates: {
@@ -62,6 +48,22 @@ Before(async function () {
             'README.mustache': await promises.readFile(resolve(
               ...pathToNodeModules,
               '@form8ion/project/templates/README.mustache'
+            ))
+          }
+        },
+        javascript: {
+          templates: {
+            'example.mustache': await promises.readFile(resolve(
+              ...pathToNodeModules,
+              '@form8ion/javascript/templates/example.mustache'
+            ))
+          }
+        },
+        rollup: {
+          templates: {
+            'rollup.config.js': await promises.readFile(resolve(
+              ...pathToNodeModules,
+              '@form8ion/rollup/templates/rollup.config.js'
             ))
           }
         },

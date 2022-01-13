@@ -1,6 +1,6 @@
 import * as projectScaffolder from '@form8ion/project';
 import {packageManagers} from '@form8ion/javascript-core';
-import {questionNames as jsQuestionNames} from '@travi/javascript-scaffolder';
+import {questionNames as jsQuestionNames} from '@form8ion/javascript';
 import {scaffold as scaffoldGithub} from '@travi/github-scaffolder';
 import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
 import {assert} from 'chai';

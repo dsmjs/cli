@@ -5,7 +5,7 @@ import {
   predicate as dependabotPredicate,
   scaffold as scaffoldDependabot
 } from '@form8ion/dependabot-scaffolder';
-import {test as jsApplicabilityTest} from '@form8ion/lift-javascript';
+import {test as jsApplicabilityTest} from '@form8ion/javascript';
 import {replace as replaceTravisCiWithGithubActions} from '@form8ion/replace-travis-ci-with-github-actions';
 import {lift as liftGithubActionsCI, test as githubActionsCiApplicabilityTest} from '@form8ion/github-actions-node-ci';
 import {javascript as liftJavascript} from './enhanced-lifters';

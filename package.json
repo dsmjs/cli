@@ -22,7 +22,7 @@
   "scripts": {
     "test": "npm-run-all --print-label --parallel lint:* --parallel test:*",
     "test:unit": "nyc run-s test:unit:base",
-    "test:unit:base": "DEBUG=any mocha src/**/*-test.js",
+    "test:unit:base": "DEBUG=any mocha 'src/**/*-test.js'",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "lint:js": "eslint . --cache",
     "lint:md": "remark . --frail",
@@ -45,15 +45,14 @@
   "dependencies": {
     "@form8ion/dependabot-scaffolder": "1.4.0",
     "@form8ion/github-actions-node-ci": "3.0.1",
+    "@form8ion/javascript": "3.5.2",
     "@form8ion/javascript-core": "4.0.1",
     "@form8ion/lift": "2.5.0",
-    "@form8ion/lift-javascript": "3.1.5",
     "@form8ion/mocha-scaffolder": "1.2.0",
     "@form8ion/project": "11.0.2",
     "@form8ion/remove-greenkeeper": "1.1.8",
     "@form8ion/replace-travis-ci-with-github-actions": "3.0.2",
     "@travi/github-scaffolder": "7.0.0",
-    "@travi/javascript-scaffolder": "14.9.4",
     "travis-token-updater": "1.6.14",
     "update-notifier": "5.1.0",
     "yargs": "17.3.1"
