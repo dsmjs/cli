@@ -1,6 +1,6 @@
 import {exists} from 'mz/fs';
 import {promises} from 'fs';
-import {Before, Given, Then} from 'cucumber';
+import {Before, Given, Then} from '@cucumber/cucumber';
 import {assert} from 'chai';
 // import toml from '@iarna/toml';
 

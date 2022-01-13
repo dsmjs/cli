@@ -1,6 +1,6 @@
 import {promises} from 'fs';
 import {exists} from 'mz/fs';
-import {Before, Given, Then} from 'cucumber';
+import {Before, Given, Then} from '@cucumber/cucumber';
 import {assert} from 'chai';
 import any from '@travi/any';
 import td from 'testdouble';

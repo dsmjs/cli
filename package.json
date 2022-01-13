@@ -59,6 +59,7 @@
   },
   "devDependencies": {
     "@babel/register": "7.16.9",
+    "@cucumber/cucumber": "8.0.0-rc.2",
     "@dsmjs/babel-preset": "1.0.92",
     "@dsmjs/eslint-config": "1.0.98",
     "@dsmjs/eslint-config-cucumber": "1.0.4",
@@ -69,7 +70,6 @@
     "chai": "4.3.4",
     "codecov": "3.8.3",
     "commitlint-config-dsmjs": "1.0.35",
-    "cucumber": "6.0.5",
     "cz-conventional-changelog": "3.3.0",
     "debug": "4.3.3",
     "gherkin-lint": "4.2.2",
