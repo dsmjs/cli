@@ -62,7 +62,7 @@
     "@cucumber/cucumber": "8.0.0-rc.2",
     "@dsmjs/babel-preset": "1.0.93",
     "@dsmjs/eslint-config": "1.0.98",
-    "@dsmjs/eslint-config-cucumber": "1.0.4",
+    "@dsmjs/eslint-config-cucumber": "1.0.5",
     "@dsmjs/eslint-config-mocha": "1.0.21",
     "@dsmjs/remark-preset-lint": "2.0.10",
     "@travi/any": "2.0.19",
