@@ -66,7 +66,7 @@
     "@dsmjs/eslint-config-mocha": "1.0.21",
     "@dsmjs/remark-preset-lint": "2.0.10",
     "@travi/any": "2.0.20",
-    "ban-sensitive-files": "1.9.17",
+    "ban-sensitive-files": "1.9.18",
     "chai": "4.3.6",
     "codecov": "3.8.3",
     "commitlint-config-dsmjs": "1.0.38",
