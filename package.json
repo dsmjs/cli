@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@form8ion/dependabot-scaffolder": "1.4.0",
-    "@form8ion/github-actions-node-ci": "3.2.0",
+    "@form8ion/github-actions-node-ci": "3.3.0",
     "@form8ion/javascript": "3.5.3",
     "@form8ion/javascript-core": "4.2.0",
     "@form8ion/lift": "2.5.0",
