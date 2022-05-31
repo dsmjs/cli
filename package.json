@@ -63,7 +63,7 @@
     "@dsmjs/babel-preset": "1.0.108",
     "@dsmjs/eslint-config": "1.0.104",
     "@dsmjs/eslint-config-cucumber": "1.0.7",
-    "@dsmjs/eslint-config-mocha": "1.0.23",
+    "@dsmjs/eslint-config-mocha": "1.0.24",
     "@dsmjs/remark-preset-lint": "2.0.13",
     "@travi/any": "2.0.20",
     "ban-sensitive-files": "1.9.18",
