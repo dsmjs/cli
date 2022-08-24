@@ -116,7 +116,8 @@ When(/^the project is scaffolded$/, async function () {
       [javascriptQuestionNames.CONFIGURE_LINTING]: true,
       [javascriptQuestionNames.PROJECT_TYPE_CHOICE]: 'Other',
       [javascriptQuestionNames.SHOULD_BE_SCOPED]: shouldBeScoped,
-      [javascriptQuestionNames.DIALECT]: dialects.BABEL
+      [javascriptQuestionNames.DIALECT]: dialects.BABEL,
+      [javascriptQuestionNames.PROVIDE_EXAMPLE]: true
     }
   });
 });
