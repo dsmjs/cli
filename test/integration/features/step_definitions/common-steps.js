@@ -1,4 +1,3 @@
-import {promises} from 'fs';
 import {resolve} from 'path';
 import {After, Before, setWorldConstructor, When} from '@cucumber/cucumber';
 import any from '@travi/any';
@@ -14,6 +13,7 @@ let action,
   projectQuestionNames;
 
 const pathToNodeModules = [__dirname, '../../../../', 'node_modules/'];
+const stubbedNodeModules = stubbedFs.load(resolve(...pathToNodeModules));
 
 export const projectNameAnswer = 'project-name';
 export const projectDescriptionAnswer = 'some project description';
@@ -37,50 +37,7 @@ Before(async function () {
   stubbedFs({
     [`${process.env.HOME}/.netrc`]: `machine github.com\n  login ${githubToken}`,
     [`${process.env.HOME}/.gitconfig`]: `[github]\n\tuser = ${this.githubUser}`,
-    node_modules: {
-      '@form8ion': {
-        project: {
-          templates: {
-            'editorconfig.txt': await promises.readFile(resolve(
-              ...pathToNodeModules,
-              '@form8ion/project/templates/editorconfig.txt'
-            )),
-            'README.mustache': await promises.readFile(resolve(
-              ...pathToNodeModules,
-              '@form8ion/project/templates/README.mustache'
-            ))
-          }
-        },
-        javascript: {
-          templates: {
-            'example.mustache': await promises.readFile(resolve(
-              ...pathToNodeModules,
-              '@form8ion/javascript/templates/example.mustache'
-            ))
-          }
-        },
-        rollup: {
-          templates: {
-            'rollup.config.js': await promises.readFile(resolve(
-              ...pathToNodeModules,
-              '@form8ion/rollup/templates/rollup.config.js'
-            ))
-          }
-        },
-        'mocha-scaffolder': {
-          templates: {
-            'canary-test.txt': await promises.readFile(resolve(
-              ...pathToNodeModules,
-              '@form8ion/mocha-scaffolder/templates/canary-test.txt'
-            )),
-            'mocha-setup.txt': await promises.readFile(resolve(
-              ...pathToNodeModules,
-              '@form8ion/mocha-scaffolder/templates/mocha-setup.txt'
-            ))
-          }
-        }
-      }
-    }
+    node_modules: stubbedNodeModules
   });
 });
 
