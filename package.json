@@ -60,7 +60,7 @@
   "devDependencies": {
     "@babel/register": "7.18.9",
     "@cucumber/cucumber": "8.6.0",
-    "@dsmjs/babel-preset": "1.0.111",
+    "@dsmjs/babel-preset": "1.0.112",
     "@dsmjs/eslint-config": "1.0.105",
     "@dsmjs/eslint-config-cucumber": "1.0.7",
     "@dsmjs/eslint-config-mocha": "1.0.24",
