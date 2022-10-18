@@ -1,4 +1,4 @@
-import * as lifter from '@form8ion/lift';
+import lifter from '@form8ion/lift';
 import {removeGreenkeeper} from '@form8ion/remove-greenkeeper';
 import {
   lift as liftDependabot,
