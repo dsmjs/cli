@@ -10,7 +10,8 @@
     "bin/"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "repository": "dsmjs/cli",
   "bugs": "https://github.com/dsmjs/cli/issues",
